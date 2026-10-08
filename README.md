@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Dispatch
+
+A fully responsive editorial/news landing page built with **Next.js, TypeScript, and Tailwind CSS**, created as part of an internship assignment.
+
+The page recreates the visual structure and editorial feel of a modern digital news publication using reusable components, responsive layouts, and static mock content.
+
+## Features
+
+- Responsive desktop, tablet, and mobile layouts
+- Editorial-style header and navigation
+- Breaking news ticker
+- Featured hero article — **Autonomous Governance**
+- Latest News & Reports multi-column grid
+- Newsletter subscription section
+- Columns & Editorials section
+- Video/documentary feature section
+- Responsive footer
+- Hover and interaction states
+- Reusable React components
+- Static mock data — no backend required
+
+## Tech Stack
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Lucide React**
+- **pnpm**
+
+## Project Structure
+
+```text
+the-dispatch/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── header/
+│   ├── hero/
+│   ├── news/
+│   ├── newsletter/
+│   ├── editorials/
+│   ├── video/
+│   ├── desks/
+│   └── footer/
+│
+├── data/
+│
+├── public/
+│   └── images/
+│
+├── package.json
+├── tsconfig.json
+└── README.md
+````
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/coderTejas565/the-dispatch.git
+cd the-dispatch
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Start the development server
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Build for production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm build
+```
 
-## Deploy on Vercel
+### 5. Start the production server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+pnpm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design Approach
+
+The implementation focuses on maintaining the visual hierarchy of an editorial publication.
+
+Key design decisions include:
+
+* Strong serif typography for headlines
+* Clean sans-serif typography for navigation and supporting content
+* Structured grid-based layouts
+* Clear section separators
+* Large editorial imagery
+* Responsive spacing and typography
+* Minimal visual styling to keep attention on the content
+
+The landing page is divided into reusable React components rather than placing the entire page inside a single component.
+
+## Content
+
+All articles, headlines, descriptions, and newsletter content are **static mock data** created specifically for the assignment.
+
+There is no backend, database, authentication, or CMS involved.
+
+## Responsive Design
+
+The layout adapts across:
+
+* Desktop
+* Tablet
+* Mobile
+
+Grid structures collapse into smaller layouts on narrower screens while maintaining the editorial hierarchy and readability.
+
+## Deployment
+
+The project can be deployed to Vercel directly from the GitHub repository.
+
+**GitHub Repository:**
+[https://github.com/coderTejas565/the-dispatch](https://github.com/coderTejas565/the-dispatch)
+
+## Assignment
+
+This project was developed as part of an internship frontend assignment to recreate a supplied news-platform design using Next.js.
+
+The implementation focuses on:
+
+* Visual accuracy
+* Responsive design
+* Component reusability
+* Clean project structure
+* Modern frontend practices
+
+## Author
+
+**Tejas**
+
+GitHub: [https://github.com/coderTejas565](https://github.com/coderTejas565)
+
+
